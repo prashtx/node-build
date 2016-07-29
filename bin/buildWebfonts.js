@@ -6,7 +6,7 @@ var webfontsGenerator = require('webfonts-generator');
 var SRC = path.resolve('./assets/svg/*.svg');
 var ASSET_PATH = process.env.STATIC_BASE || '';
 
-var TEMPLATE = process.env.argv[2];
+var TEMPLATE = process.argv[2];
 
 glob(SRC, function(error, files) {
   webfontsGenerator({
